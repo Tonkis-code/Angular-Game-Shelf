@@ -1,59 +1,50 @@
-# AngularGameShelf
+# 🎮 Game Shelf
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.4.
+Game Shelf is a small Angular project I'm building to learn and experiment with Angular.
 
-## Development server
+The goal of this project isn't just to build a working application, but to understand the concepts and architecture behind it as I develop it.
 
-To start a local development server, run:
+## 📚 What I'm Learning
 
-```bash
-ng serve
-```
+This project is being developed gradually as I learn Angular concepts such as:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Components
+- Component hierarchy
+- Data binding and interpolation
+- Component inputs
+- Angular control flow (`@for`)
+- Routing
+- Services
+- Forms
+- HTTP and APIs
 
-## Code scaffolding
+More concepts will be added as the project grows.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🕹️ About the Project
 
-```bash
-ng generate component component-name
-```
+Game Shelf is a simple application for keeping track of video games.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Games can contain information such as:
 
-```bash
-ng generate --help
-```
+- Title
+- Playing status
+- Rating
 
-## Building
+The application currently uses a component structure where a game list manages the collection of games and individual game cards are responsible for displaying each game.
 
-To build the project run:
+## 🛠️ Built With
 
-```bash
-ng build
-```
+- Angular
+- TypeScript
+- HTML
+- CSS
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🚧 Status
 
-## Running unit tests
+This project is currently a learning project and is actively being developed.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Features and structure will change as I learn more about Angular and improve the application.
 
-```bash
-ng test
-```
+## 🎯 Goal
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+By the end of the project, I want to be able to explain not only how the application works, but why I chose to structure and implement it the way I did.
