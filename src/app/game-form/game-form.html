@@ -1,0 +1,16 @@
+<form (ngSubmit)="addGame()">
+    <label for="title">Game Title</label>
+    <input id="title" name="title" type="text" placeholder="Type your game here..." [(ngModel)]="title" />
+    <label for="status">Game Status</label>
+    <select id="status" name="status" [(ngModel)]="status">
+        <option>Playing</option>
+        <option>Shelved</option>
+        <option>Wishlist</option>
+    </select>
+    <label for="rating">Game Rating</label>
+
+    <p><input id="rating" name="rating" [(ngModel)]="rating" min="0" max="10" type="number"
+            placeholder="Type your rating here..." /> / 10</p>
+
+    <button type="submit">Add Game</button>
+</form>

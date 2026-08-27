@@ -1,3 +1,5 @@
+<app-game-form (formSent)="addGame($event)"></app-game-form>
+
 @for (game of games; track $index) {
 <app-game-card [title]="game.title" [status]="game.status" [rating]="game.rating"></app-game-card>
 }
