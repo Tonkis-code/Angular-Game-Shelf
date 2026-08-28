@@ -1,36 +1,50 @@
 # 🎮 Game Shelf
 
-Game Shelf is a small Angular project I'm building to learn and experiment with Angular.
+Game Shelf is a small Angular project I built to learn and experiment with the fundamentals of Angular.
 
-The goal of this project isn't just to build a working application, but to understand the concepts and architecture behind it as I develop it.
+The goal of the project was not just to build a working application, but to understand the concepts and architecture behind it while developing it.
 
-## 📚 What I'm Learning
+## 📚 What I Learned
 
-This project is being developed gradually as I learn Angular concepts such as:
+While building Game Shelf, I worked with Angular and TypeScript concepts such as:
 
 - Components
 - Component hierarchy
 - Data binding and interpolation
 - Component inputs
+- Component outputs and events
 - Angular control flow (`@for`)
-- Routing
-- Services
-- Forms
-- HTTP and APIs
-
-More concepts will be added as the project grows.
+- Forms and `FormsModule`
+- Two-way binding with `ngModel`
+- TypeScript types and null handling
+- Working with arrays
+- Local storage
+- JSON serialization and parsing
+- Component and global CSS
 
 ## 🕹️ About the Project
 
 Game Shelf is a simple application for keeping track of video games.
 
-Games can contain information such as:
+Each game contains:
 
 - Title
-- Playing status
+- Status (`Playing`, `Shelved`, or `Wishlist`)
 - Rating
 
-The application currently uses a component structure where a game list manages the collection of games and individual game cards are responsible for displaying each game.
+New games can be added through a form and are displayed dynamically as game cards.
+
+The application uses local storage to persist the game collection, allowing added games to remain available after refreshing or reopening the application.
+
+## 🧩 Component Structure
+
+The application is split into a few small components:
+
+- **GameList** manages the collection of games.
+- **GameForm** handles user input and emits newly created games to the game list.
+- **GameCard** receives game data through inputs and displays an individual game.
+
+This structure helped me understand how data can move between parent and child components in Angular.
 
 ## 🛠️ Built With
 
@@ -39,12 +53,14 @@ The application currently uses a component structure where a game list manages t
 - HTML
 - CSS
 
-## 🚧 Status
+## ✅ Status
 
-This project is currently a learning project and is actively being developed.
+Game Shelf is complete.
 
-Features and structure will change as I learn more about Angular and improve the application.
+It was intentionally kept small and focused on learning the fundamentals of Angular rather than building a large or production-ready application.
 
-## 🎯 Goal
+## 🎯 What I Took Away
 
-By the end of the project, I want to be able to explain not only how the application works, but why I chose to structure and implement it the way I did.
+The main goal of Game Shelf was to become more comfortable with Angular before moving on to larger projects.
+
+Rather than only getting the application to work, I focused on understanding why the code works, how the components communicate, and how data moves through the application.
