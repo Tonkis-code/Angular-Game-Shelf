@@ -23,5 +23,9 @@ export class GameForm {
       status: this.status,
       rating: this.rating,
     });
+
+    this.title = '';
+    this.status = 'Playing';
+    this.rating = null;
   }
 }

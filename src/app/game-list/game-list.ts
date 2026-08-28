@@ -24,5 +24,17 @@ export class GameList {
 
   addGame(game: { title: string; status: string; rating: number }) {
     this.games.push(game);
+
+    localStorage.setItem('games', JSON.stringify(this.games));
+  }
+
+  constructor() {
+    const savedGames = localStorage.getItem('games');
+
+    if (savedGames == null) {
+      return;
+    } else {
+      this.games = JSON.parse(savedGames);
+    }
   }
 }
